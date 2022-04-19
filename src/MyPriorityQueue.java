@@ -15,7 +15,7 @@ public class MyPriorityQueue <Type extends Comparable<Type>> {
             index = parent(index);
         }
     }
-    public void swap(int i, int j){
+    private void swap(int i, int j){
         Type temp = heap.get(i);
         heap.set(i,heap.get(j));
         heap.set(j,temp);
